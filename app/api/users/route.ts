@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
 interface Props {
   params: { id: number };
 }
-// updating
+// updating the user by user id
 export async function PUT(request: NextRequest, { params }: Props) {
   const body = await request.json();
   if (!body.name)
