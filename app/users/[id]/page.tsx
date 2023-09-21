@@ -1,3 +1,5 @@
+import { notFound } from "next/navigation";
+
 interface Props {
   params: {
     id: number;
