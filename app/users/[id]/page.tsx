@@ -6,6 +6,7 @@ interface Props {
   };
 }
 const UserDetailPage = ({ params: { id } }: Props) => {
+  if (id > 10) notFound(); // for custom not found. we have added this.
   return (
     <>
       <h1>UserDetailPage of {id}</h1>
