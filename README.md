@@ -2,6 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 This is project to refresh next.js framework concepts.
 
+# Database
+
+- sqlite with prisma (https://www.prisma.io/docs/concepts/database-connectors/sqlite)
+- use SQLiteStudio for DBMS (https://sqlitestudio.pl/)
+
 ## Getting Started
 
 First, run the development server:
