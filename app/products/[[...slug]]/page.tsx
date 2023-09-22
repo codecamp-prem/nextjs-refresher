@@ -1,3 +1,6 @@
+import Link from "next/link";
+import ProductTable from "./ProductTable";
+
 interface Props {
   params: { slug: string[] };
   searchParams: { sortOrder: string };
@@ -9,9 +12,16 @@ const ProductPage = ({
   return (
     <>
       <h1>
-        Product Page with dynamic slug or search params like ?sortOrder=name:{" "}
+        Product Page wih dynamic slug or search params like ?sortOrder=name:{" "}
         {slug} -- {sortOrder}
       </h1>
+      <>
+        <h1>Users</h1>
+        {/* <Link href="/products/new" className="btn">
+        New User
+      </Link> */}
+        <ProductTable sortOrder={sortOrder} />
+      </>
     </>
   );
 };
