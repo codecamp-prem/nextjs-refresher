@@ -28,13 +28,3 @@ export async function POST(request: NextRequest) {
   });
   return NextResponse.json(user, { status: 201 }); // 201 :
 }
-interface Props {
-  params: { id: number };
-}
-
-// deleting the user
-export function DELETE(request: NextRequest, { params }: Props) {
-  if (params.id > 10)
-    return NextResponse.json({ error: "user not found" }, { status: 404 });
-  return NextResponse.json({});
-}
