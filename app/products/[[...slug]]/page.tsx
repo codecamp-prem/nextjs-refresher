@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ProductTable from "./ProductTable";
+//import { Metadata } from "next";
 
 interface Props {
   params: { slug: string[] };
@@ -26,3 +27,13 @@ const ProductPage = ({
   );
 };
 export default ProductPage;
+
+// Page wise SEO /to change default metadata mention in @/api/layout.tsx
+// export async function generateMetadata(): Promise<Metadata> {
+//   const product = await fetch('');
+
+//   return {
+//     title: product.title,
+//     description: product.description
+//   }
+// }

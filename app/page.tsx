@@ -1,4 +1,5 @@
 import house from "@/public/images/hilly-island.jpeg"; // next js auto optimise huge image into like .webp forma
+import { Metadata } from "next";
 import Image from "next/image";
 
 export default async function Home() {
@@ -17,3 +18,7 @@ export default async function Home() {
     </main>
   );
 }
+
+export const metadata: Metadata = {
+  title: "Next.js App",
+};
