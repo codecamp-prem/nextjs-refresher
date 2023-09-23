@@ -11,7 +11,7 @@ const ProductPage = ({
 }: Props) => {
   return (
     <>
-      <h1>
+      <h1 className="font-poppins">
         Product Page wih dynamic slug or search params like ?sortOrder=name:{" "}
         {slug} -- {sortOrder}
       </h1>
